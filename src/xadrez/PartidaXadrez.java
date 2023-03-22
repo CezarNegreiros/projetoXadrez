@@ -31,8 +31,18 @@ public class PartidaXadrez {
         tabuleiro.posicionarPeca(peca, new PosicaoXadrez(coluna, linha).conversaoPosicaoTabuleiro());
     }
     private void setupInicial(){
-        posicionandoNovaPeca('b', 6, new Torre(tabuleiro, Cor.WHITE));
-        posicionandoNovaPeca('e', 8, new Rei(tabuleiro, Cor.BLACK));
-        posicionandoNovaPeca('e', 1, new Rei(tabuleiro, Cor.WHITE));
+        posicionandoNovaPeca('c', 1, new Torre(tabuleiro, Cor.WHITE));
+        posicionandoNovaPeca('c', 2, new Torre(tabuleiro, Cor.WHITE));
+        posicionandoNovaPeca('d', 2, new Torre(tabuleiro, Cor.WHITE));
+        posicionandoNovaPeca('e', 2, new Torre(tabuleiro, Cor.WHITE));
+        posicionandoNovaPeca('e', 1, new Torre(tabuleiro, Cor.WHITE));
+        posicionandoNovaPeca('d', 1, new Rei(tabuleiro, Cor.WHITE));
+
+        posicionandoNovaPeca('c', 7, new Torre(tabuleiro, Cor.BLACK));
+        posicionandoNovaPeca('c', 8, new Torre(tabuleiro, Cor.BLACK));
+        posicionandoNovaPeca('d', 7, new Torre(tabuleiro, Cor.BLACK));
+        posicionandoNovaPeca('e', 7, new Torre(tabuleiro, Cor.BLACK));
+        posicionandoNovaPeca('e', 8, new Torre(tabuleiro, Cor.BLACK));
+        posicionandoNovaPeca('d', 8, new Rei(tabuleiro, Cor.BLACK));
     }
 }

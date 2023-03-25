@@ -25,7 +25,7 @@ public class PosicaoXadrez {
     }
 
     protected Posicao conversaoPosicaoTabuleiro(){
-        return new Posicao(8 -linha, coluna - 'a');
+        return new Posicao(8 - linha, coluna - 'a');
     }
 
     protected static PosicaoXadrez conversaoPosicaoXadrez(Posicao posicao){
